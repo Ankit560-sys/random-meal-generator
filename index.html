@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meal Genrator</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        background-color: rgb(210, 208, 208);
+
+
+    }
+
+    .container {
+        /* background-color: blueviolet; */
+        margin: 100px auto;
+        width: 100%;
+        max-width: 1250px;
+        position: relative;
+    }
+
+    h1 {
+
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+
+    .getMeal {
+        font-size: 15px;
+        padding: 10px 20px;
+        border: none;
+        background-color: blueviolet;
+        position: absolute;
+        box-shadow: 0 0 3px blueviolet;
+        cursor: pointer;
+        color: white;
+        left: 44%;
+
+    }
+
+    .getMeal:hover {
+
+        background-color: rgb(81, 9, 148);
+
+    }
+
+    /* Meal Section Css */
+
+    .random-meal {
+        /* max-width: 1250px; */
+        width: 100%;
+        max-width: 1250px;
+        margin: 0 auto;
+
+
+    }
+
+    .meal-cont {
+        display: column;
+        
+        /* background-color: aqua; */
+
+
+
+    }
+
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+
+
+    .left-side {
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+
+
+    }
+
+    .left-side img {
+
+        width: 400px;
+
+
+    }
+
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-side h1 {
+        text-align: left;
+        padding: 0 20px;
+
+    }
+
+    .right-side p {
+        font-size: 17px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .video-cont {
+        width: 100%;
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .video-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .video-content h1 {
+        text-align: center;
+        margin-bottom: 10px;
+
+
+    }
+
+    .video-content iframe {
+        margin: 0 auto;
+
+        width: 700px;
+        margin-bottom: 50px;
+    }
+</style>
+
+<body>
+
+    <!-- main get meal container -->
+
+    <div class="container">
+
+        <h1>Feeling hungry?</h1>
+        <p>Get a random meal by clicking below</p>
+        <button class="getMeal" id="getMeal-btn">Get Meal</button>
+
+
+
+    </div>
+
+    <!-- meal display section -->
+
+    <div class="random-meal" id="myMeal">
+        <!-- <div class="meal-cont">
+            <div class="left-side">
+                <img src="https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg" alt="Meal-pic">
+
+                <p>Category:<span class="info">Seafood</span></p>
+                <p>Area:<span class="info">British</span></p>
+                <p>Tags:<span class="info">Fish,Pie,Breakfast,Baking</span></p>
+
+                <div class="ingredients-list">
+
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Floury Potatoes - 900g
+                        </li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+                        <li>Olive Oil - 2 tbsp</li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="right-side">
+                <h1>Fish pie</h1>
+                <p>01.Put the potatoes in a large pan of cold salted water and bring to the boil. Lower the heat, cover,
+                    then simmer gently for 15 minutes until tender. Drain, then return to the pan over a low heat for 30
+                    seconds to drive off any excess water. Mash with 1 tbsp olive oil, then season. 02.Meanwhile put the
+                    milk in a large sauté pan, add the fish and bring to the boil. Remove from the heat, cover and stand
+                    for 3 minutes. Remove the fish (reserving the milk) and pat dry with kitchen paper, then gently
+                    flake into an ovenproof dish, discarding the skin and any bones. 03.Heat the remaining oil in a pan,
+                    stir in the flour and cook for 30 seconds. Gradually stir in 200-250ml of the reserved milk (discard
+                    the rest). Grate in nutmeg, season, then bubble until thick. Stir in the cream. 04.Preheat the oven
+                    to 190°C/fan170°C/gas 5. Grate the artichokes and add to the dish with the leek, prawns and herbs.
+                    Stir the lemon zest and juice into the sauce, then pour over. Mix gently with a wooden spoon.
+                    05.Spoon the mash onto the fish mixture, then use a fork to make peaks, which will crisp and brown
+                    as it cooks. Sprinkle over the cheese, then bake for 35-40 minutes until golden and bubbling. Serve
+                    with wilted greens.</p>
+
+
+            </div>
+ -->
+ 
+       <!-- video recipe -->
+         <!-- <div class="video-cont">
+             <div class="video-content">
+ 
+                 <h1>Video Recipe</h1>
+                <iframe width="420" height="315"></iframe>
+
+             </div>
+         </div> -->
+     
+     
+        <!-- </div> -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const getMealbtn = document.getElementById('getMeal-btn');
+        const myMeal = document.getElementById('myMeal');
+
+
+
+        getMealbtn.addEventListener('click', function () {
+
+            fetch('https://www.themealdb.com/api/json/v1/1/random.php').
+                then(res => res.json()).
+                then(res => {
+
+                    const meal = res.meals[0];
+
+                    createMeal(meal)
+
+
+
+                    // console.log(res.meals[0])
+                }
+                ).catch(err => console.log(err));
+
+
+
+        }
+
+        )
+
+        function createMeal(meal) {
+
+
+
+            // console.log(meal)
+
+            const ingredients = [];
+            for( let i=1;i<=20;i++){
+                if(meal[`strIngredient${i}`] ){
+
+
+                    ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)  
+                } else{
+                    break;
+                }
+
+
+            }
+
+            console.log(ingredients[4])
+
+             const ingre = ingredients.map(item=>{
+                return `<li>${item}</li>`;
+            }).join(" ")
+
+              console.log(ingre)
+
+
+
+
+           
+            
+            myMeal.innerHTML = "";
+            const div = document.createElement('div');
+            div.className = "meal-cont";
+
+
+           
+            div.innerHTML = `
+
+            <div class="flex-row">
+            <div class="left-side">
+                <img src='${meal.strMealThumb}'>
+
+                <p>Category:<span class="info"><strong>${meal.strCategory}</strong></span></p>
+                <p>Area:<span class="info"><strong>${meal.strArea}</strong></span></p>
+                <p>Tags:<span class="info"><strong>${meal.strTags}</strong></span></p>
+
+                <div class="ingredients-list">
+
+                    <h2>Ingredients</h2>
+                    <ul>
+
+                        
+                       ${ingre}
+                    
+                    
+                        </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="right-side">
+                <h1>${meal.strMeal}</h1>
+                <p>${meal.strInstructions}</p>
+
+
+            </div>
+            </div>
+
+            <div class="video-cont">
+             <div class="video-content">
+ 
+                 <h1>Video Recipe</h1>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}"></iframe>
+
+             </div>
+         </div>
+     
+     
+
+
+            `
+            myMeal.append(div);
+
+
+
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
